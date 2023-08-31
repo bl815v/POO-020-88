@@ -28,5 +28,8 @@ public class AplMain {
 		System.out.println();
 		System.out.println(a.saludo());
 		System.out.println(b.saludo(a));
+		
+		Persona c = new Persona("Nicki", 23);
+		System.out.println(a.saludo(c));
 	}
 }
