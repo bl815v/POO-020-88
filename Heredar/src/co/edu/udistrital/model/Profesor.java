@@ -1,28 +1,28 @@
 package co.edu.udistrital.model;
 
 public class Profesor extends Persona{
-	int horasclase;
+	int horasClase;
 	String especialidad;
 	
-	public Profesor(String pnombre, int pedad, int phorasclase, String pespecialidad) {
+	public Profesor(String pnombre, int pedad, int phorasClase, String pespecialidad) {
 		super(pnombre, pedad);
-		horasclase = phorasclase;
+		horasClase = phorasClase;
 		especialidad = pespecialidad;
 	}
 	
 	@Override
 	public String toString() {
 		return super.toString() +
-				"\nHoras de clase: " + horasclase +
+				"\nHoras de clase: " + horasClase +
 				"\nEspecialidad: " + especialidad;
 	}
 
 	public int getHorasclase() {
-		return horasclase;
+		return horasClase;
 	}
 
 	public void setHorasclase(int horasclase) {
-		this.horasclase = horasclase;
+		this.horasClase = horasclase;
 	}
 
 	public String getEspecialidad() {
