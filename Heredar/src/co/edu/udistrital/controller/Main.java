@@ -9,7 +9,14 @@ import co.edu.udistrital.model.Profesor;
 public class Main {
 	public static void main(String[] args) {
 		Scanner leer = new Scanner(System.in);
-		Persona[] p = new Persona[5];
+		System.out.print("Ingrese la cantidad de usuarios a registrar: ");
+		int n = leer.nextInt();
+		while(n < 0) {
+			System.out.println("Error, la cantidad debe ser positiva...");
+			n = leer.nextInt();
+		}
+			
+		Persona[] p = new Persona[n];
 		
 		int edad, horasClase;
 		String nombre, carrera, especialidad;
@@ -56,9 +63,10 @@ public class Main {
 		}
 		
 		for(int i = 0; i < p.length; i++) {
-			System.out.println("___________________________________________________");
+			System.out.println("___________________________________________________________________");
 			System.out.println(p[i]);
 		}
+		System.out.println("___________________________________________________________________");
 		
 		
 	
